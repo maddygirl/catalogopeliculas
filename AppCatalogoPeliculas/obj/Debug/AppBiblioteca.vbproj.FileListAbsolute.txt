@@ -1,0 +1,16 @@
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\bin\Debug\AppBiblioteca.exe.config
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\bin\Debug\AppBiblioteca.exe
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\bin\Debug\AppBiblioteca.pdb
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\bin\Debug\AppBiblioteca.xml
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.vbproj.AssemblyReference.cache
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.Resources.resources
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.vbproj.GenerateResource.cache
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.vbproj.CoreCompileInputs.cache
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.exe
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.xml
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.pdb
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.Form1.resources
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.frmLogin_form.resources
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.FormRegistro.resources
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.Form2.resources
+C:\Users\arely\Dropbox\UNIVERSIDAD CENTRAL\AppBiblioteca\AppBiblioteca\obj\Debug\AppBiblioteca.frmCatalogoUsuario.resources
