@@ -50,6 +50,8 @@ Partial Class frmAdmin
         Me.btnInsertar = New System.Windows.Forms.Button()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.dgvListaPeliculas = New System.Windows.Forms.DataGridView()
+        Me.cmbCartelera = New System.Windows.Forms.ComboBox()
+        Me.lblCatelera = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox2.SuspendLayout()
@@ -60,6 +62,8 @@ Partial Class frmAdmin
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.lblCatelera)
+        Me.GroupBox1.Controls.Add(Me.cmbCartelera)
         Me.GroupBox1.Controls.Add(Me.txtAnio)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
         Me.GroupBox1.Controls.Add(Me.cmbGeneroPeli)
@@ -106,26 +110,26 @@ Partial Class frmAdmin
         Me.cmbGeneroPeli.Items.AddRange(New Object() {"Drama", "Comedia", "Aventura", "Terror", "Ciencia ficción", "Fantasía", "Musical", "Animación", "Documental", "Western", "Romance", "Misterio", "Suspense", "Crimen", "Bélico", "Familiar", "Histórico", "Artístico", "Experimental"})
         Me.cmbGeneroPeli.Location = New System.Drawing.Point(133, 78)
         Me.cmbGeneroPeli.Name = "cmbGeneroPeli"
-        Me.cmbGeneroPeli.Size = New System.Drawing.Size(234, 26)
+        Me.cmbGeneroPeli.Size = New System.Drawing.Size(234, 25)
         Me.cmbGeneroPeli.TabIndex = 16
         '
         'txtPosterURL
         '
-        Me.txtPosterURL.Location = New System.Drawing.Point(760, 187)
+        Me.txtPosterURL.Location = New System.Drawing.Point(760, 159)
         Me.txtPosterURL.Name = "txtPosterURL"
         Me.txtPosterURL.Size = New System.Drawing.Size(284, 24)
         Me.txtPosterURL.TabIndex = 15
         '
         'txtSinopsisPeli
         '
-        Me.txtSinopsisPeli.Location = New System.Drawing.Point(760, 136)
+        Me.txtSinopsisPeli.Location = New System.Drawing.Point(760, 113)
         Me.txtSinopsisPeli.Name = "txtSinopsisPeli"
         Me.txtSinopsisPeli.Size = New System.Drawing.Size(284, 24)
         Me.txtSinopsisPeli.TabIndex = 14
         '
         'txtDuracionPeli
         '
-        Me.txtDuracionPeli.Location = New System.Drawing.Point(760, 83)
+        Me.txtDuracionPeli.Location = New System.Drawing.Point(760, 66)
         Me.txtDuracionPeli.Name = "txtDuracionPeli"
         Me.txtDuracionPeli.Size = New System.Drawing.Size(284, 24)
         Me.txtDuracionPeli.TabIndex = 13
@@ -147,27 +151,27 @@ Partial Class frmAdmin
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(645, 192)
+        Me.Label8.Location = New System.Drawing.Point(645, 164)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(83, 20)
+        Me.Label8.Size = New System.Drawing.Size(90, 18)
         Me.Label8.TabIndex = 8
         Me.Label8.Text = "Póster URL:"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(645, 139)
+        Me.Label7.Location = New System.Drawing.Point(645, 116)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(66, 20)
+        Me.Label7.Size = New System.Drawing.Size(69, 18)
         Me.Label7.TabIndex = 7
         Me.Label7.Text = "Sinopsis:"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(645, 88)
+        Me.Label6.Location = New System.Drawing.Point(645, 71)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(70, 20)
+        Me.Label6.Size = New System.Drawing.Size(72, 18)
         Me.Label6.TabIndex = 6
         Me.Label6.Text = "Duración:"
         '
@@ -176,7 +180,7 @@ Partial Class frmAdmin
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(645, 30)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 20)
+        Me.Label5.Size = New System.Drawing.Size(38, 18)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Año:"
         '
@@ -185,7 +189,7 @@ Partial Class frmAdmin
         Me.Label4.AutoSize = True
         Me.Label4.Location = New System.Drawing.Point(31, 190)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(64, 20)
+        Me.Label4.Size = New System.Drawing.Size(65, 18)
         Me.Label4.TabIndex = 4
         Me.Label4.Text = "Director:"
         '
@@ -194,7 +198,7 @@ Partial Class frmAdmin
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(31, 137)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(47, 20)
+        Me.Label3.Size = New System.Drawing.Size(48, 18)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Título:"
         '
@@ -203,7 +207,7 @@ Partial Class frmAdmin
         Me.Label2.AutoSize = True
         Me.Label2.Location = New System.Drawing.Point(31, 86)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(60, 20)
+        Me.Label2.Size = New System.Drawing.Size(62, 18)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Género:"
         '
@@ -220,7 +224,7 @@ Partial Class frmAdmin
         Me.Label1.AutoSize = True
         Me.Label1.Location = New System.Drawing.Point(31, 28)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(79, 20)
+        Me.Label1.Size = New System.Drawing.Size(81, 18)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "ID Pelicula:"
         '
@@ -313,9 +317,29 @@ Partial Class frmAdmin
         Me.dgvListaPeliculas.Size = New System.Drawing.Size(1066, 240)
         Me.dgvListaPeliculas.TabIndex = 75
         '
+        'cmbCartelera
+        '
+        Me.cmbCartelera.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCartelera.FormattingEnabled = True
+        Me.cmbCartelera.Items.AddRange(New Object() {"Si", "No"})
+        Me.cmbCartelera.Location = New System.Drawing.Point(760, 211)
+        Me.cmbCartelera.Name = "cmbCartelera"
+        Me.cmbCartelera.Size = New System.Drawing.Size(284, 25)
+        Me.cmbCartelera.TabIndex = 20
+        '
+        'lblCatelera
+        '
+        Me.lblCatelera.AutoSize = True
+        Me.lblCatelera.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft
+        Me.lblCatelera.Location = New System.Drawing.Point(648, 214)
+        Me.lblCatelera.Name = "lblCatelera"
+        Me.lblCatelera.Size = New System.Drawing.Size(68, 18)
+        Me.lblCatelera.TabIndex = 21
+        Me.lblCatelera.Text = "Cartelera"
+        '
         'frmAdmin
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -323,12 +347,12 @@ Partial Class frmAdmin
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Font = New System.Drawing.Font("Franklin Gothic Book", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmAdmin"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "frmAdmin"
+        Me.Text = "Administracion de Peliculas"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -366,4 +390,6 @@ Partial Class frmAdmin
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents txtAnio As TextBox
     Friend WithEvents dgvListaPeliculas As DataGridView
+    Friend WithEvents lblCatelera As Label
+    Friend WithEvents cmbCartelera As ComboBox
 End Class

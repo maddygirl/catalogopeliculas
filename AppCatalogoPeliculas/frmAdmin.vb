@@ -13,7 +13,7 @@
     End Sub
 
     Function camposLlenos() As Boolean
-        If txtID_Peli.Text = "" Or txtAnio.Text = "" Or txtDuracionPeli.Text = "" Or cmbGeneroPeli.Text = "" Or txtTituloPeli.Text = "" Or txtDirectorPeli.Text = "" Or txtSinopsisPeli.Text = "" Or txtPosterURL.Text = "" Then
+        If txtID_Peli.Text = "" Or txtAnio.Text = "" Or txtDuracionPeli.Text = "" Or cmbGeneroPeli.Text = "" Or txtTituloPeli.Text = "" Or txtDirectorPeli.Text = "" Or txtSinopsisPeli.Text = "" Or txtPosterURL.Text = "" Or cmbCartelera.Text = "" Then
             Return False
         Else
             Return True
@@ -30,7 +30,7 @@
 
     Private Sub btnInsertar_Click(sender As Object, e As EventArgs) Handles btnInsertar.Click
         Dim vID, vAnio, vDuracion As Integer
-        Dim vGenero, vTitulo, vDirector, vSinopsis, vPosterUrl As String
+        Dim vGenero, vTitulo, vDirector, vSinopsis, vPosterUrl, vCartelera As String
         Dim strsql As String = ""
 
         Try
@@ -47,13 +47,14 @@
                 vDirector = txtDirectorPeli.Text
                 vSinopsis = txtSinopsisPeli.Text
                 vPosterUrl = txtPosterURL.Text
+                vCartelera = cmbCartelera.Text
 
                 'Falta agregar validacion para consultar peliculas existentes
-                strsql = "INSERT INTO PELICULA (ID, GENERO, TITULO, DIRECTOR, ANIO, DURACION, SINOPSIS, POSTER_URL) "
-                strsql += vbCrLf + "VALUES ('" & vID & "', '" & vGenero & "', '" & vTitulo & "', '" & vDirector & "', '" & vAnio & "', '" & vDuracion & "', '" & vSinopsis & "', '" & vPosterUrl & "')"
+                strsql = "INSERT INTO PELICULA (ID, GENERO, TITULO, DIRECTOR, ANIO, DURACION, SINOPSIS, POSTER_URL, CARTELERA) "
+                strsql += vbCrLf + "VALUES ('" & vID & "', '" & vGenero & "', '" & vTitulo & "', '" & vDirector & "', '" & vAnio & "', '" & vDuracion & "', '" & vSinopsis & "', '" & vPosterUrl & "', '" & vCartelera & "')"
                 conexion.insertarPelicula(strsql)
                 If conexion.f = 0 Then
-                    MessageBox.Show("Peliula añadida satisfactoriamente.")
+                    MessageBox.Show("Pelicula añadida satisfactoriamente.")
                     Funciones.clearAlltxt(Me)
                     cmbGeneroPeli.SelectedIndex.Equals(0)
                     mostrarDgv()
@@ -92,12 +93,13 @@
             txtDirectorPeli.Text = selectedRow("DIRECTOR").ToString
             txtSinopsisPeli.Text = selectedRow("SINOPSIS").ToString
             txtPosterURL.Text = selectedRow("POSTER_URL").ToString
+            cmbCartelera.Text = selectedRow("CARTELERA").ToString
         End If
     End Sub
 
     Private Sub btnModificar_Click(sender As Object, e As EventArgs) Handles btnModificar.Click
         Dim vID, vAnio, vDuracion As Integer
-        Dim vGenero, vTitulo, vDirector, vSinopsis, vPosterUrl As String
+        Dim vGenero, vTitulo, vDirector, vSinopsis, vPosterUrl, vCartelera As String
 
         If camposLlenos() = False Then
             MessageBox.Show("Hay campos vacíos. Intente de nuevo.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error)
@@ -112,8 +114,9 @@
         vDuracion = CInt(txtDuracionPeli.Text)
         vSinopsis = txtSinopsisPeli.Text
         vPosterUrl = txtPosterURL.Text
+        vCartelera = cmbCartelera.Text
 
-        If conexion.actualizarPeli(vID, vGenero, vTitulo, vDirector, vAnio, vDuracion, vSinopsis, vPosterUrl) Then
+        If conexion.actualizarPeli(vID, vGenero, vTitulo, vDirector, vAnio, vDuracion, vSinopsis, vPosterUrl, vCartelera) Then
             MessageBox.Show("Pelicula actualizada satisfactoriamente.")
             mostrarDgv()
             Funciones.clearAlltxt(Me)

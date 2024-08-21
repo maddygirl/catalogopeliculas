@@ -1,7 +1,7 @@
 ﻿Imports System.Data.SqlClient          'importara todos los objetos que necesito para mi sql
 Imports System.Text.RegularExpressions 'para crear expreciones regulares, me ayudara a validar formatos
 Public Class Conexion
-    Public conexion As SqlConnection = New SqlConnection("Data source=DESKTOP-OO1F2Q2; Initial Catalog=Catalogo_Peliculas; trusted_connection=Yes")
+    Public conexion As SqlConnection = New SqlConnection("Data source=DESKTOP-VLAD\DBVLAD; Initial Catalog=Catalogo_Peliculas; trusted_connection=Yes")
     Public comando As SqlCommand
     Public da As SqlDataAdapter
     Public dr As SqlDataReader
@@ -117,7 +117,7 @@ Public Class Conexion
         Try
             Dim dt = New DataTable() 'Instanciando en memoria
             Dim strsql As String
-            strsql = "SELECT TITULO, DIRECTOR, GENERO, ANIO, DURACION, SINOPSIS FROM PELICULA"
+            strsql = "SELECT ID, TITULO, DIRECTOR, GENERO, ANIO, DURACION, SINOPSIS, CARTELERA FROM PELICULA"
             consultadgv(strsql)
             da.Fill(dt)
             Return (dt)
@@ -143,10 +143,10 @@ Public Class Conexion
 
     End Function
 
-    Public Function actualizarPeli(ByVal idPelicula As Integer, ByVal vGenero As String, ByVal vTitulo As String, ByVal vDirector As String, ByVal vAnio As Integer, ByVal vDuracion As Integer, ByVal vSinopsis As String, ByVal vPosterUrl As String) As Boolean
+    Public Function actualizarPeli(ByVal idPelicula As Integer, ByVal vGenero As String, ByVal vTitulo As String, ByVal vDirector As String, ByVal vAnio As Integer, ByVal vDuracion As Integer, ByVal vSinopsis As String, ByVal vPosterUrl As String, ByVal vCartelera As String) As Boolean
         Try
             conexion.Open()
-            comando = New SqlCommand("UPDATE PELICULA SET GENERO = @genero, TITULO = @titulo, DIRECTOR = @director, ANIO = @anio, DURACION = @duracion, SINOPSIS = @sinopsis, POSTER_URL = @posterUrl WHERE ID = @idPelicula", conexion)
+            comando = New SqlCommand("UPDATE PELICULA SET GENERO = @genero, TITULO = @titulo, DIRECTOR = @director, ANIO = @anio, DURACION = @duracion, SINOPSIS = @sinopsis, POSTER_URL = @posterUrl, CARTELERA = @cartelera WHERE ID = @idPelicula", conexion)
             comando.Parameters.AddWithValue("@genero", vGenero)
             comando.Parameters.AddWithValue("@titulo", vTitulo)
             comando.Parameters.AddWithValue("@director", vDirector)
@@ -155,6 +155,7 @@ Public Class Conexion
             comando.Parameters.AddWithValue("@sinopsis", vSinopsis)
             comando.Parameters.AddWithValue("@posterUrl", vPosterUrl)
             comando.Parameters.AddWithValue("@idPelicula", idPelicula)
+            comando.Parameters.AddWithValue("@cartelera", vCartelera)
             comando.ExecuteNonQuery()
             conexion.Close()
             f = 0

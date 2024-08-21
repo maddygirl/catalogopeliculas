@@ -24,21 +24,22 @@ Partial Class frmCatalogoUsuario
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frmCatalogoUsuario))
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.dgvPeliculas = New System.Windows.Forms.DataGridView()
         Me.GroupBox3 = New System.Windows.Forms.GroupBox()
         Me.btnSalir = New System.Windows.Forms.Button()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.dgvPeliculas = New System.Windows.Forms.DataGridView()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnBusquedaAvanzada = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvPeliculas, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox3.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox2
@@ -51,6 +52,17 @@ Partial Class frmCatalogoUsuario
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Lista de peliculas"
+        '
+        'dgvPeliculas
+        '
+        Me.dgvPeliculas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgvPeliculas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvPeliculas.Location = New System.Drawing.Point(0, 20)
+        Me.dgvPeliculas.Name = "dgvPeliculas"
+        Me.dgvPeliculas.ReadOnly = True
+        Me.dgvPeliculas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        Me.dgvPeliculas.Size = New System.Drawing.Size(1043, 254)
+        Me.dgvPeliculas.TabIndex = 0
         '
         'GroupBox3
         '
@@ -66,7 +78,7 @@ Partial Class frmCatalogoUsuario
         'btnSalir
         '
         Me.btnSalir.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnSalir.Font = New System.Drawing.Font("Franklin Gothic Book", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnSalir.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnSalir.ForeColor = System.Drawing.Color.White
         Me.btnSalir.Location = New System.Drawing.Point(958, 10)
         Me.btnSalir.Name = "btnSalir"
@@ -79,47 +91,18 @@ Partial Class frmCatalogoUsuario
         '
         Me.Label7.AutoSize = True
         Me.Label7.BackColor = System.Drawing.Color.White
-        Me.Label7.Font = New System.Drawing.Font("Algerian", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label7.Location = New System.Drawing.Point(406, 23)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(208, 35)
+        Me.Label7.Size = New System.Drawing.Size(226, 37)
         Me.Label7.TabIndex = 4
         Me.Label7.Text = "ACY MOVIES"
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
-        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(1043, 140)
-        Me.PictureBox2.TabIndex = 0
-        Me.PictureBox2.TabStop = False
-        '
-        'dgvPeliculas
-        '
-        Me.dgvPeliculas.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.dgvPeliculas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvPeliculas.Location = New System.Drawing.Point(0, 20)
-        Me.dgvPeliculas.Name = "dgvPeliculas"
-        Me.dgvPeliculas.ReadOnly = True
-        Me.dgvPeliculas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvPeliculas.Size = New System.Drawing.Size(1043, 254)
-        Me.dgvPeliculas.TabIndex = 0
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(251, 6)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(538, 289)
-        Me.PictureBox1.TabIndex = 10
-        Me.PictureBox1.TabStop = False
         '
         'btnBuscar
         '
         Me.btnBuscar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnBuscar.Font = New System.Drawing.Font("Franklin Gothic Book", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBuscar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnBuscar.ForeColor = System.Drawing.Color.White
         Me.btnBuscar.Location = New System.Drawing.Point(8, 22)
         Me.btnBuscar.Name = "btnBuscar"
@@ -131,7 +114,7 @@ Partial Class frmCatalogoUsuario
         'btnLimpiar
         '
         Me.btnLimpiar.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnLimpiar.Font = New System.Drawing.Font("Franklin Gothic Book", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnLimpiar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnLimpiar.ForeColor = System.Drawing.Color.White
         Me.btnLimpiar.Location = New System.Drawing.Point(8, 76)
         Me.btnLimpiar.Name = "btnLimpiar"
@@ -143,6 +126,7 @@ Partial Class frmCatalogoUsuario
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.btnBusquedaAvanzada)
         Me.GroupBox1.Controls.Add(Me.btnLimpiar)
         Me.GroupBox1.Controls.Add(Me.btnBuscar)
         Me.GroupBox1.Controls.Add(Me.PictureBox1)
@@ -153,9 +137,39 @@ Partial Class frmCatalogoUsuario
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Busqueda"
         '
+        'btnBusquedaAvanzada
+        '
+        Me.btnBusquedaAvanzada.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnBusquedaAvanzada.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnBusquedaAvanzada.ForeColor = System.Drawing.Color.White
+        Me.btnBusquedaAvanzada.Location = New System.Drawing.Point(795, 22)
+        Me.btnBusquedaAvanzada.Name = "btnBusquedaAvanzada"
+        Me.btnBusquedaAvanzada.Size = New System.Drawing.Size(242, 48)
+        Me.btnBusquedaAvanzada.TabIndex = 14
+        Me.btnBusquedaAvanzada.Text = "BUSQUEDA AVANZADA"
+        Me.btnBusquedaAvanzada.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = CType(resources.GetObject("PictureBox2.Image"), System.Drawing.Image)
+        Me.PictureBox2.Location = New System.Drawing.Point(0, 0)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(1043, 140)
+        Me.PictureBox2.TabIndex = 0
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(251, 6)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(538, 289)
+        Me.PictureBox1.TabIndex = 10
+        Me.PictureBox1.TabStop = False
+        '
         'frmCatalogoUsuario
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 18.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -163,19 +177,19 @@ Partial Class frmCatalogoUsuario
         Me.Controls.Add(Me.GroupBox3)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Font = New System.Drawing.Font("Franklin Gothic Book", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.Name = "frmCatalogoUsuario"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "ACY MOVIES"
         Me.GroupBox2.ResumeLayout(False)
+        CType(Me.dgvPeliculas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox3.ResumeLayout(False)
         Me.GroupBox3.PerformLayout()
-        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.dgvPeliculas, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -189,4 +203,5 @@ Partial Class frmCatalogoUsuario
     Friend WithEvents btnBuscar As Button
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents btnBusquedaAvanzada As Button
 End Class

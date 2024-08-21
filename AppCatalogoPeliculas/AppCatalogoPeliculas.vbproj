@@ -81,6 +81,18 @@
     <Compile Include="frmAdmin.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmBusquedaAvanzada.Designer.vb">
+      <DependentUpon>frmBusquedaAvanzada.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmBusquedaAvanzada.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPelicula.Designer.vb">
+      <DependentUpon>frmPelicula.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmPelicula.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_Inicio.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -128,6 +140,12 @@
     <EmbeddedResource Include="frmAdmin.resx">
       <DependentUpon>frmAdmin.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmBusquedaAvanzada.resx">
+      <DependentUpon>frmBusquedaAvanzada.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPelicula.resx">
+      <DependentUpon>frmPelicula.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frm_Inicio.resx">
       <DependentUpon>frm_Inicio.vb</DependentUpon>
     </EmbeddedResource>
@@ -161,6 +179,9 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IMAGENNODISPONIBLE.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
