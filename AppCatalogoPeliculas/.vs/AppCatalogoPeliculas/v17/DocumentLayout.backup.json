@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\",
+  "WorkspaceRootPath": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|c:\\users\\suare\\onedrive\\desktop\\catalogopeliculas-main\\appcatalogopeliculas\\frmcatalogousuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|c:\\users\\suare\\onedrive\\documents\\github\\catalogopeliculas\\appcatalogopeliculas\\frmcatalogousuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|solutionrelative:frmcatalogousuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|c:\\users\\suare\\onedrive\\desktop\\catalogopeliculas-main\\appcatalogopeliculas\\frmcatalogousuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmcatalogousuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|solutionrelative:frmcatalogousuario.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|c:\\users\\suare\\onedrive\\desktop\\catalogopeliculas-main\\appcatalogopeliculas\\frmbusquedaavanzada.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmbusquedaavanzada.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
       "RelativeMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|solutionrelative:frmbusquedaavanzada.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|c:\\users\\suare\\onedrive\\desktop\\catalogopeliculas-main\\appcatalogopeliculas\\frmbusquedaavanzada.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmbusquedaavanzada.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|solutionrelative:frmbusquedaavanzada.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|c:\\users\\suare\\onedrive\\desktop\\catalogopeliculas-main\\appcatalogopeliculas\\frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
+      "AbsoluteMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{5012687F-DD50-4508-822C-516B38D6CF4B}|AppCatalogoPeliculas.vbproj|solutionrelative:frmadmin.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
     }
   ],
@@ -52,46 +52,43 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "frmBusquedaAvanzada.vb",
-              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmBusquedaAvanzada.vb",
+              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmBusquedaAvanzada.vb",
               "RelativeDocumentMoniker": "frmBusquedaAvanzada.vb",
-              "ToolTip": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmBusquedaAvanzada.vb",
+              "ToolTip": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmBusquedaAvanzada.vb",
               "RelativeToolTip": "frmBusquedaAvanzada.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-08-21T05:58:46.444Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-21T05:58:46.444Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "frmAdmin.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmAdmin.vb",
+              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmAdmin.vb",
               "RelativeDocumentMoniker": "frmAdmin.vb",
               "ToolTip": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmAdmin.vb [Design]",
-              "RelativeToolTip": "frmAdmin.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmAdmin.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-08-21T05:47:50.51Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-21T05:47:50.51Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "frmBusquedaAvanzada.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmBusquedaAvanzada.vb",
+              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmBusquedaAvanzada.vb",
               "RelativeDocumentMoniker": "frmBusquedaAvanzada.vb",
               "ToolTip": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmBusquedaAvanzada.vb [Design]",
-              "RelativeToolTip": "frmBusquedaAvanzada.vb [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmBusquedaAvanzada.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
-              "WhenOpened": "2024-08-21T05:47:41.282Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-08-21T05:47:41.282Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "frmCatalogoUsuario.vb [Design]",
-              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmCatalogoUsuario.vb",
+              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmCatalogoUsuario.vb",
               "RelativeDocumentMoniker": "frmCatalogoUsuario.vb",
-              "ToolTip": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmCatalogoUsuario.vb [Design]",
+              "ToolTip": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmCatalogoUsuario.vb [Design]",
               "RelativeToolTip": "frmCatalogoUsuario.vb [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-08-21T05:46:43.888Z",
@@ -101,9 +98,9 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "frmCatalogoUsuario.vb",
-              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmCatalogoUsuario.vb",
+              "DocumentMoniker": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmCatalogoUsuario.vb",
               "RelativeDocumentMoniker": "frmCatalogoUsuario.vb",
-              "ToolTip": "C:\\Users\\suare\\OneDrive\\Desktop\\catalogopeliculas-main\\AppCatalogoPeliculas\\frmCatalogoUsuario.vb",
+              "ToolTip": "C:\\Users\\suare\\OneDrive\\Documents\\GitHub\\catalogopeliculas\\AppCatalogoPeliculas\\frmCatalogoUsuario.vb",
               "RelativeToolTip": "frmCatalogoUsuario.vb",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
