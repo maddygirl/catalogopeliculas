@@ -73,8 +73,8 @@ Public Class frmCatalogoUsuario
 
 
             Dim idPelicula As Integer = CInt(selectedRow.Cells("ID").Value)
-                Dim posterUrl As String = GetPosterUrlFromDatabase(idPelicula)
-                Try
+            Dim posterUrl As String = GetPosterUrlFromDatabase(idPelicula)
+            Try
                 'Intenta jalar la imagen
                 frmInfoPeli.pbPoster.Load(posterUrl)
             Catch ex As Exception

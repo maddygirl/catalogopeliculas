@@ -10,11 +10,11 @@ Public Class Conexion
     Public dataset As DataSet = New DataSet()
     Public f As Integer
 
+
     Public Sub conectar()
 
         Try
             conexion.Open()
-            MessageBox.Show("Se establecio la conexion a la base de datos. Presione OK para continuar.")
         Catch ex As Exception
             MessageBox.Show("Error: " + ex.ToString)
             MsgBox("Contacte a soporte")
@@ -74,6 +74,14 @@ Public Class Conexion
         Dim dt = New DataTable()
         Consultar("Select ID FROM PELICULA", "ID")
         idPelicula = dataset.Tables("ID").Rows.Count
+        da.Fill(dt)
+        Return (dt)
+    End Function
+
+    Public Function generadorIdUsuario() As DataTable
+        Dim dt = New DataTable()
+        Consultar("Select ID FROM USUARIO", "ID")
+        idUsuario = dataset.Tables("ID").Rows.Count
         da.Fill(dt)
         Return (dt)
     End Function
@@ -143,10 +151,10 @@ Public Class Conexion
 
     End Function
 
-    Public Function actualizarPeli(ByVal idPelicula As Integer, ByVal vGenero As String, ByVal vTitulo As String, ByVal vDirector As String, ByVal vAnio As Integer, ByVal vDuracion As Integer, ByVal vSinopsis As String, ByVal vPosterUrl As String, ByVal vCartelera As String) As Boolean
+    Public Function actualizarPeli(ByVal idPelicula As Integer, ByVal vGenero As String, ByVal vTitulo As String, ByVal vDirector As String, ByVal vAnio As Integer, ByVal vDuracion As Integer, ByVal vSinopsis As String, ByVal vPosterUrl As String) As Boolean
         Try
             conexion.Open()
-            comando = New SqlCommand("UPDATE PELICULA SET GENERO = @genero, TITULO = @titulo, DIRECTOR = @director, ANIO = @anio, DURACION = @duracion, SINOPSIS = @sinopsis, POSTER_URL = @posterUrl, CARTELERA = @cartelera WHERE ID = @idPelicula", conexion)
+            comando = New SqlCommand("UPDATE PELICULA SET GENERO = @genero, TITULO = @titulo, DIRECTOR = @director, ANIO = @anio, DURACION = @duracion, SINOPSIS = @sinopsis, POSTER_URL = @posterUrl WHERE ID = @idPelicula", conexion)
             comando.Parameters.AddWithValue("@genero", vGenero)
             comando.Parameters.AddWithValue("@titulo", vTitulo)
             comando.Parameters.AddWithValue("@director", vDirector)
@@ -155,7 +163,6 @@ Public Class Conexion
             comando.Parameters.AddWithValue("@sinopsis", vSinopsis)
             comando.Parameters.AddWithValue("@posterUrl", vPosterUrl)
             comando.Parameters.AddWithValue("@idPelicula", idPelicula)
-            comando.Parameters.AddWithValue("@cartelera", vCartelera)
             comando.ExecuteNonQuery()
             conexion.Close()
             f = 0

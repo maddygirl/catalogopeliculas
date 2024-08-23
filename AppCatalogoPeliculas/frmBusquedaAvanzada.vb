@@ -39,4 +39,8 @@
         Me.DialogResult = DialogResult.OK
         Me.Close()
     End Sub
+
+    Private Sub btnLimpiar_Click(sender As Object, e As EventArgs) Handles btnLimpiar.Click
+
+    End Sub
 End Class

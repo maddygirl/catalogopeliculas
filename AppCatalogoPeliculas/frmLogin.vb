@@ -2,15 +2,15 @@
 
     Dim conexion As Conexion = New Conexion()
     Private Sub LinkLabel1_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles LinkLabel1.LinkClicked
-        frm_Inicio.Show()
         Me.Close()
+        frm_Inicio.Show()
     End Sub
 
     ''programación del link Registrarse Aqui, hace llamado al formulario de Registro
     Private Sub lkbRegistro_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lkbRegistro.LinkClicked
         Dim FormRegistro As New FormRegistro
-        FormRegistro.Show()
-        Me.Hide() ''oculta el formuario atual
+        Me.Close() ''oculta el formuario atual
+        FormRegistro.ShowDialog()
     End Sub
 
 
@@ -45,12 +45,14 @@
                 If dt.Rows(0)!ROL = 1 Then
                     txtUser.Clear()
                     txtPassword.Clear()
-                    Me.Hide() 'Oculta login
+                    adminUser = True
+                    Me.Close() 'Oculta login
                     frmAdmin.ShowDialog() 'Abre el formulario administrador
                 Else
                     txtUser.Clear()
                     txtPassword.Clear()
-                    Me.Hide() 'Oculta login
+                    adminUser = False
+                    Me.Close() 'Oculta login
                     frmCatalogoUsuario.ShowDialog() 'Abre el formulario usuario
                 End If
             Else

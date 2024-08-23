@@ -5,7 +5,9 @@ Imports System.Text.RegularExpressions
 Module Funciones
     ''Variables globales 
     Public F, K As Integer
-    Public idPelicula As Integer
+    Public idPelicula, idUsuario As Integer
+    Public adminUser As Boolean
+    Public codigoVerificacion As String
 
     Public Sub set_solo_letras(ByRef ee As System.Windows.Forms.KeyPressEventArgs)
         'Funcion que obliga a digitar en mayúscula en los textbox
