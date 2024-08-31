@@ -35,7 +35,6 @@
             searchCriteria.Add(New Tuple(Of String, String)("CARTELERA", cmbCartelera.SelectedItem.ToString()))
         End If
 
-        'Devuelve resultado OK
         Me.DialogResult = DialogResult.OK
         Me.Close()
     End Sub

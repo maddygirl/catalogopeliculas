@@ -33,6 +33,7 @@ Partial Class frmCatalogoUsuario
         Me.btnBuscar = New System.Windows.Forms.Button()
         Me.btnLimpiar = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.btnTaquilla = New System.Windows.Forms.Button()
         Me.btnBusquedaAvanzada = New System.Windows.Forms.Button()
         Me.GroupBox2.SuspendLayout()
         CType(Me.dgvPeliculas, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -60,6 +61,7 @@ Partial Class frmCatalogoUsuario
         Me.dgvPeliculas.Location = New System.Drawing.Point(0, 20)
         Me.dgvPeliculas.Name = "dgvPeliculas"
         Me.dgvPeliculas.ReadOnly = True
+        Me.dgvPeliculas.RowHeadersWidth = 51
         Me.dgvPeliculas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.dgvPeliculas.Size = New System.Drawing.Size(1043, 254)
         Me.dgvPeliculas.TabIndex = 0
@@ -144,6 +146,7 @@ Partial Class frmCatalogoUsuario
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.btnTaquilla)
         Me.GroupBox1.Controls.Add(Me.btnBusquedaAvanzada)
         Me.GroupBox1.Controls.Add(Me.btnLimpiar)
         Me.GroupBox1.Controls.Add(Me.btnBuscar)
@@ -154,6 +157,18 @@ Partial Class frmCatalogoUsuario
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Busqueda"
+        '
+        'btnTaquilla
+        '
+        Me.btnTaquilla.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnTaquilla.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTaquilla.ForeColor = System.Drawing.Color.White
+        Me.btnTaquilla.Location = New System.Drawing.Point(797, 76)
+        Me.btnTaquilla.Name = "btnTaquilla"
+        Me.btnTaquilla.Size = New System.Drawing.Size(242, 48)
+        Me.btnTaquilla.TabIndex = 16
+        Me.btnTaquilla.Text = "TAQUILLA"
+        Me.btnTaquilla.UseVisualStyleBackColor = False
         '
         'btnBusquedaAvanzada
         '
@@ -204,4 +219,5 @@ Partial Class frmCatalogoUsuario
     Friend WithEvents btnLimpiar As Button
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents btnBusquedaAvanzada As Button
+    Friend WithEvents btnTaquilla As Button
 End Class

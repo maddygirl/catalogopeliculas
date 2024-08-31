@@ -122,4 +122,12 @@ Public Class frmCatalogoUsuario
             dgvPeliculas.DataSource = BusquedaAvanzada(frmAdvancedSearch.searchCriteria)
         End If
     End Sub
+
+    Private Sub btnTaquilla_Click(sender As Object, e As EventArgs) Handles btnTaquilla.Click
+        Dim frmTaquilla As New Taquilla
+        frmTaquilla.Show()
+        Me.Hide() ''oculta el formuario atual
+
+    End Sub
+
 End Class
